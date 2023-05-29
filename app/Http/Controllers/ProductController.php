@@ -19,7 +19,6 @@ class ProductController extends Controller
 
     public function store(Request $request)
     {
-        // Validation can be added here if needed
         Product::create($request->all());
 
         return redirect('/products')->with('success', 'Product created successfully.');

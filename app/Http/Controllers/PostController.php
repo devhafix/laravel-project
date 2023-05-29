@@ -20,7 +20,6 @@ class PostController extends Controller
 
     public function store(Request $request)
     {
-        // Validation can be added here if needed
         Post::create($request->all());
 
         return redirect('/posts')->with('success', 'Post created successfully.');
