@@ -5,7 +5,6 @@ You have a Laravel application with a form that submits user information using a
 ```php
 $name = $request->input('name');
 ```
-
 Question 2:
 In your Laravel application, you want to retrieve the value of the ```'User-Agent'``` header from the current request. Write the code to accomplish this and store the value in a variable called ```$userAgent```.
 
@@ -19,7 +18,6 @@ You are building an API endpoint in Laravel that accepts a GET request with a ``
 ```php
 $userAgent = $request->header('User-Agent');
 ```
-
 Question 4:
 Create a JSON response in Laravel with the following data:
 ```json
@@ -31,7 +29,6 @@ Create a JSON response in Laravel with the following data:
     }
 }
 ```
-
 ```php
 $data = [
     'message' => 'Success',
