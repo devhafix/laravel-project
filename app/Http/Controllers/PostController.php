@@ -9,8 +9,9 @@ class PostController extends Controller
 {
     public function index()
     {
-        $posts = Post::all();
-        return view('posts.index', compact('posts'));
+
+        
+        return view('posts.index', ['posts' => Post::orderBy('created_at', 'desc')->paginate(6), "name" => "Sajjad"]);
     }
 
     public function create()
